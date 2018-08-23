@@ -4,7 +4,11 @@ var MatchGame = {};
   Sets up a new game after HTML document has loaded.
   Renders a 4x4 board of cards.
 */
-
+$(document).ready(function() {
+  var $game = $('#game');
+  var values = MatchGame.generateCardValues();
+  MatchGame.renderCards(values, $game);
+});
 /*
   Generates and returns an array of matching card values.
  */
