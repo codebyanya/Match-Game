@@ -20,14 +20,18 @@ for (var i = 0; i <= 8; i++) {
   InitialCardValues.push(i);
   InitialCardValues.push(i);
 }
-};
+
 
 var cardValues = [];
 
 while (InitialCardValues.length > 0 ) {
 var randomIndex = [Math.floor(Math.random() * InitialCardValues.length)];
+var randomValue = InitialCardValues.splice(randomIndex, 1)[0];
+cardValues.push(randomValue);
 }
 
+return cardValues;
+};
 /*
   Converts card values to jQuery card objects and adds them to the supplied game
   object.
