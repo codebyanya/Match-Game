@@ -39,4 +39,9 @@ const init = function () {
 Updates styles on flipped cards depending whether they are a match or not.*/
 
 const clickCard = function () {
+
+    activeCard = this;
+    if (activeCard == activeCards[0]) return;
+    activeCard.classList.remove("hiddencard");
+
 }
