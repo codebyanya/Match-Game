@@ -20,10 +20,17 @@ Renders a 4x4 board of cards.
 
 const init = function () {
 
-      setTimeout(function () {
-          cards.forEach(card => {
-              card.classList.add("hiddencard")
-              card.addEventListener("click", clickCard)
-          })
-      }, 1200)
+    setTimeout(function () {
+        cards.forEach(card => {
+            card.classList.add("hiddencard")
+            card.addEventListener("click", clickCard)
+        })
+    }, 1200)
+
+/*  Generates an array of matching card colors. */
+    cards.forEach(card => {
+        const position = Math.floor(Math.random() * cardColors.length);
+        card.classList.add(cardColors[position]);
+        cardColors.splice(position, 1);
+    })
 };
