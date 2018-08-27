@@ -79,3 +79,11 @@ p {
 .violet {
     background-color: #995AF2;
 }
+
+.hiddencard {
+    background-color: rgb(32, 64, 86);
+}
+
+.off {
+    background-color: #999999;
+}
