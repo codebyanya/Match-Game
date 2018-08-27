@@ -37,3 +37,6 @@ const init = function () {
 
 /* Flips over a given card and checks to see if two cards are flipped over.
 Updates styles on flipped cards depending whether they are a match or not.*/
+
+const clickCard = function () {
+}
