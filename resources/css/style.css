@@ -46,3 +46,36 @@ p {
 .container {
 	padding-top: 5.25rem;
 }
+
+
+.red {
+    background-color: #F25A5C;
+}
+
+.blue {
+    background-color: #5A8CF2 ;
+}
+
+.yellow {
+    background-color: #F2E55A;
+}
+
+.green {
+    background-color: #A6F25A;
+}
+
+.orange {
+    background-color: #F2995A;
+}
+
+.pink {
+    background-color: #F25AD8;
+}
+
+.lightgreen {
+    background-color: #5AF2BF;
+}
+
+.violet {
+    background-color: #995AF2;
+}
