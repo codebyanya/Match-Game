@@ -34,3 +34,6 @@ const init = function () {
         cardColors.splice(position, 1);
     })
 };
+
+/* Flips over a given card and checks to see if two cards are flipped over.
+Updates styles on flipped cards depending whether they are a match or not.*/
