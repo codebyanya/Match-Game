@@ -1,46 +1,13 @@
-var MatchGame = {};
+/*traversing DOM*/
+let cards = document.querySelectorAll("li");
+cards = [...cards];
 
+const startTime = new Date().getTime();
 
-$(document).ready(function() {
-  var $game = $('#game');
-  var values = MatchGame.generateCardValues();
-  MatchGame.renderCards(values, $game);
-});
+let activeCard = "";
+const activeCards = [];
 
+const gameLength = cards.length / 2;
+let gameResult = 0;
 
-MatchGame.generateCardValues = function () {
-
-var InitialCardValues =[];
-for (var i = 0; i <= 8; i++) {
-  InitialCardValues.push(i);
-  InitialCardValues.push(i);
-}
-
-
-var cardValues = [];
-
-while (InitialCardValues.length > 0 ) {
-var randomIndex = [Math.floor(Math.random() * InitialCardValues.length)];
-var randomValue = InitialCardValues.splice(randomIndex, 1)[0];
-cardValues.push(randomValue);
-}
-
-return cardValues;
-};
-/*
-  Converts card values to jQuery card objects and adds them to the supplied game
-  object.
-*/
-
-MatchGame.renderCards = function(cardValues, $game) {
-
-};
-
-/*
-  Flips over a given card and checks to see if two cards are flipped over.
-  Updates styles on flipped cards depending whether they are a match or not.
- */
-
-MatchGame.flipCard = function($card, $game) {
-
-};
+const cardColors = ["orange", "orange", "pink", "pink", "red", "red", "green", "green", "blue", "blue", "yellow", "yellow", "violet", "violet", "lightgreen", "lightgreen"];
