@@ -11,3 +11,13 @@ const gameLength = cards.length / 2;
 let gameResult = 0;
 
 const cardColors = ["orange", "orange", "pink", "pink", "red", "red", "green", "green", "blue", "blue", "yellow", "yellow", "violet", "violet", "lightgreen", "lightgreen"];
+
+
+/*
+Sets up a new game after HTML document has loaded.
+Renders a 4x4 board of cards.
+*/
+
+const init = function () {
+
+};
