@@ -20,4 +20,10 @@ Renders a 4x4 board of cards.
 
 const init = function () {
 
+      setTimeout(function () {
+          cards.forEach(card => {
+              card.classList.add("hiddencard")
+              card.addEventListener("click", clickCard)
+          })
+      }, 1200)
 };
