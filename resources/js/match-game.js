@@ -55,6 +55,28 @@ const clickCard = function () {
         activeCards[1] = activeCard; /*2nd click*/
 
 
+        setTimeout(function () {
 
-    }
-    };
+/*WIN*/     if (activeCards[0].className === activeCards[1].className) {
+            activeCards.forEach( card => card.classList.add("off"))
+            gameResult++;
+            cards = cards.filter( card => !card.classList.contains("off"));
+
+            if (gameResult == gameLength) {
+                const endTime = new Date().getTime();
+                const gameTime = (endTime - startTime) / 1000
+                location.reload(); }
+             }
+
+/*LOSS*/    else {
+            activeCards.forEach( card => card.classList.add("hiddencard"))
+                 }
+
+            activeCard = "";
+            activeCards.length = 0;
+            cards.forEach(card => card.addEventListener("click", clickCard))
+
+    }, 500)
+
+   }
+};
