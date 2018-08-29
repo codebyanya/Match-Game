@@ -27,7 +27,7 @@ const init = function () {
         })
     }, 1200)
 
-/*  Generates an array of matching card colors. */
+/*  Generates an array of matching card colors and numbers. */
     cards.forEach(card => {
         const position = Math.floor(Math.random() * cardColors.length);
         card.classList.add(cardColors[position]);
