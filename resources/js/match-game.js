@@ -44,4 +44,12 @@ const clickCard = function () {
     if (activeCard == activeCards[0]) return;
     activeCard.classList.remove("hiddencard");
 
-}
+    if (activeCards.length === 0) {
+        activeCards[0] = activeCard; /*1st click*/
+        return;
+    }
+
+
+    else {
+        cards.forEach(card => card.removeEventListener("click", clickCard))
+        activeCards[1] = activeCard; /*2nd click*/
