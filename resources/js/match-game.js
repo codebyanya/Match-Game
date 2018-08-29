@@ -53,3 +53,8 @@ const clickCard = function () {
     else {
         cards.forEach(card => card.removeEventListener("click", clickCard))
         activeCards[1] = activeCard; /*2nd click*/
+
+
+
+    }
+    };
