@@ -2,15 +2,15 @@
 let cards = document.querySelectorAll("li");
 cards = [...cards];
 
-const startTime = new Date().getTime();
-
 let activeCard = "";
 const activeCards = [];
 
+const startTime = new Date().getTime();
 const gameLength = cards.length / 2;
 let gameResult = 0;
 
 const cardColors = ["orange", "orange", "pink", "pink", "red", "red", "green", "green", "blue", "blue", "yellow", "yellow", "violet", "violet", "lightgreen", "lightgreen"];
+const cardNumbers =["1", "1", "2", "2", "3", "3", "4", "4", "5", "5", "6", "6", "7", "7", "8", "8"];
 
 
 /*
