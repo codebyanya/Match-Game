@@ -32,8 +32,14 @@ const init = function () {
         const position = Math.floor(Math.random() * cardColors.length);
         card.classList.add(cardColors[position]);
         cardColors.splice(position, 1);
+
+        card.innerHTML= cardNumbers[position];
+        cardNumbers.splice(position, 1);
     })
 };
+
+
+init()
 
 /* Flips over a given card and checks to see if two cards are flipped over.
 Updates styles on flipped cards depending whether they are a match or not.*/
